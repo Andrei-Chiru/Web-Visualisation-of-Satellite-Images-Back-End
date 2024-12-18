@@ -1,3 +1,19 @@
+This is the back-end for the project Web Visualisation of Satellite Images.
+
+This project could not have been made possible without project submission and guidance from Digital Lights.
+
+https://lights.digital/
+
+Here are the contact details of the rest of the team:
+
+Bogdan Iordache - bogdanmihai453@gmail.com
+
+Cristi Dobos - c.c.dobos@gmail.com
+
+Sophie Schaaf - Sophie@langeveld.me
+
+Sorana Stan - sorana.a.stan10@gmail.com
+
 # Django Backend
 
 ## Overview
