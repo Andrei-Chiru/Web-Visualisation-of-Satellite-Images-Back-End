@@ -1,0 +1,14 @@
+asgiref
+Django
+django-cors-headers
+djangorestframework
+djangorestframework-simplejwt
+GDAL==3.6.2
+gdal2tiles
+PyJWT
+pytz
+psycopg2-binary
+python-dotenv
+Pillow
+rasterio==1.3.10
+sqlparse

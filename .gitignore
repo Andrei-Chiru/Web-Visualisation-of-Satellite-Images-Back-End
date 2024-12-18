@@ -1,0 +1,36 @@
+# Default ignored files
+shelf/
+workspace.xml
+
+# Editor-based HTTP Client requests
+httpRequests/
+
+# Datasource local storage ignored files
+dataSources/
+dataSources.local.xml
+
+# Ignore .idea 
+.idea/
+
+# Ignore __pycache__
+__pycache__/
+
+# And extra image_data files
+image_data/compressed.webp
+image_data/image.tif
+
+# Ignore temporary created files
+*.vrt
+
+# Ignore local original images
+**/original_images/*
+
+# Ignore these directories as image storage folders
+**/images/*
+**/output/*
+**/temp/*
+**/tiles/*
+
+# Ignore Virtual Environment
+venv/
+*.png

@@ -1,0 +1,33 @@
+image: python:3.11
+
+stages:
+  - build
+  - test
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python -V  # Print out python version for debugging
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - apt-get update && apt-get upgrade -y && apt-get install -y libgdal-dev gdal-bin
+  - pip install -r DLBackend/requirements.txt
+  - python ./manage.py help start
+
+build:
+  stage: build
+  script:
+    - python ./manage.py start
+
+test:
+  stage: test
+  script:
+    - python ./manage.py migrate
+    - python ./manage.py test

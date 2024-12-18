@@ -1,0 +1,8 @@
+1) go to the folder that contains image.tif
+cd image_data
+
+2) translate the data into another format (.vrt)
+gdal_translate -of VRT -ot Byte -scale image.tif temp.vrt
+
+3)  create the tiling from temp.vrt in folder tiles with zooms 6 through 13, each picture will be 128 pixels
+gdal2tiles.py -z 6-13 -w leaflet --tilesize=128 temp.vrt temp
